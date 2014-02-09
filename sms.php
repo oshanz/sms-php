@@ -32,7 +32,7 @@ if (isset($_POST['clientID']) && isset($_POST['token']) && isset($_POST['PhoneNu
         $date = filter_input(INPUT_POST, 'Date');
         $time = filter_input(INPUT_POST, 'Time');
 
-        if (hash('md5', 'ceylonlinux') === $token) {
+        if (hash('md5', 'cl') === $token) {
             if (!is_dir('userdetails/')) {
                 mkdir('./userdetails/', 0777, TRUE);
             }
